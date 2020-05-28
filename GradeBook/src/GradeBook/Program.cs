@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GradeBook
 {
@@ -6,7 +7,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var book = new GradeBook(" My Book ");
+            var book = new Book(" My Book ");
             while(true)
             {
                 Console.WriteLine("Enter the grade or 'q' to quit");
@@ -34,6 +35,7 @@ namespace GradeBook
                     Console.WriteLine();
                 }
             }
+            book.ShowStatistics();
         }
     }
 }
