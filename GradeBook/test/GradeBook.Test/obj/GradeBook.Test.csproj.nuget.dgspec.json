@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\test.csproj": {}
+    "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\GradeBook.Test\\GradeBook.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\test.csproj": {
+    "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\GradeBook.Test\\GradeBook.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\test.csproj",
-        "projectName": "test",
-        "projectPath": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\test.csproj",
+        "projectUniqueName": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\GradeBook.Test\\GradeBook.Test.csproj",
+        "projectName": "GradeBook.Test",
+        "projectPath": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\GradeBook.Test\\GradeBook.Test.csproj",
         "packagesPath": "C:\\Users\\Madhur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\obj\\",
+        "outputPath": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\GradeBook.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Madhur\\AppData\\Roaming\\NuGet\\NuGet.Config"

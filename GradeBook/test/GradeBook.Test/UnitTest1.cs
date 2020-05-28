@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace test
+namespace GradeBook.Test
 {
     public class UnitTest1
     {

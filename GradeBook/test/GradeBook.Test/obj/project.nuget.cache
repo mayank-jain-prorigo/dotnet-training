@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S06ktPwTvjUdb7nflcWLw3gE1/gxgqtxipKnR6mpKhKRD+id48o+FOYfqQgIpNk06zxsl46wy3KTEUddFlyWJw==",
+  "dgSpecHash": "RUomG9vugdRoHXyNuWLKwpDcXHS0dbmSD2zsk4NcRwT0zAghdDBaXdSsoxEQarZixag0uMBvtA00h2W5kK7z6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\test.csproj",
+  "projectFilePath": "C:\\Users\\Madhur\\Documents\\mayank-git\\dotnet-training\\GradeBook\\test\\GradeBook.Test\\GradeBook.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Madhur\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Madhur\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
