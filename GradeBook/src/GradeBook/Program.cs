@@ -35,7 +35,7 @@ namespace GradeBook
                     Console.WriteLine();
                 }
             }
-            var stat  = book.ShowStatistics();
+            var stat  = book.GetStatistics();
             Console.WriteLine($"The lowes grade is {stat.Low}");
             Console.WriteLine($"The highest grade is {stat.High}");
             Console.WriteLine($"The average grade is {stat.Average:N1}");

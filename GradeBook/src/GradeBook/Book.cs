@@ -16,12 +16,9 @@ namespace GradeBook
             grades.Add(grade);
         }
 
-        public Statistics ShowStatistics()
+        public Statistics GetStatistics()
         {
             var result = new Statistics();
-            result.Average = 0.0;
-            result.High = double.MinValue;
-            result.Low = double.MaxValue;
 
             foreach ( var num in grades)
             {
@@ -33,6 +30,6 @@ namespace GradeBook
             return result;
         }
         private List<double> grades;
-        private string Name;
+        public string Name;
     }
 }
