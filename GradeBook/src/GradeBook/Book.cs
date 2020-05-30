@@ -4,32 +4,16 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    public class Book
+    public abstract class Book : NamedObject , IBook
     {
-        public Book(string name)
-        {
-            grades = new List<double>();
-            this.Name = name;
-        }
-        public void AddGrade(double grade)
-        {
-            grades.Add(grade);
-        }
+        public abstract event GradeAddedDelegate GradeAdded;
 
-        public Statistics GetStatistics()
-        {
-            var result = new Statistics();
+        public abstract void AddGrade(double grade);
 
-            foreach ( var num in grades)
-            {
-                result.Low = Math.Min(num, result.Low);
-                result.High = Math.Max(num, result.High);
-                result.Average += num;
-            }
-            result.Average /= grades.Count;
-            return result;
+        public abstract Statistics GetStatistics();
+
+        protected Book(string name) : base(name)
+        {
         }
-        private List<double> grades;
-        public string Name;
     }
 }

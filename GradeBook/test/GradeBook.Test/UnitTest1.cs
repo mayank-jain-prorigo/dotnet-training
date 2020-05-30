@@ -9,7 +9,7 @@ namespace GradeBook.Test
         public void Test1()
         {
             // Arrange
-            var book = new Book("");
+            var book = new InMemoryBook("");
             book.AddGrade(70);
             book.AddGrade(70);
             book.AddGrade(70);
