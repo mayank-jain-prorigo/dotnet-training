@@ -7,7 +7,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var book = new InMemoryBook(" My Book ");
+            var book = new DiskBook("My Book");
             book.GradeAdded += OneGradeAdded;
             EnterGrades(book);
             var stat = book.GetStatistics();
@@ -50,7 +50,7 @@ namespace GradeBook
 
         static void OneGradeAdded(object sender, EventArgs e)
         {
-            Console.WriteLine("A grade is added.")
+            Console.WriteLine("A grade is added.");
         }
     }
 }

@@ -59,28 +59,7 @@ namespace GradeBook
 
             foreach ( var num in grades)
             {
-                result.Low = Math.Min(num, result.Low);
-                result.High = Math.Max(num, result.High);
-                result.Average += num;
-            }
-            result.Average /= grades.Count;
-            switch(result.Average)
-            {
-                case var d when d >= 90:
-                    result.Letter = 'A';
-                    break;
-                case var d when d >= 90:
-                    result.Letter = 'B';
-                    break;
-                case var d when d >= 90:
-                    result.Letter = 'C';
-                    break;
-                case var d when d >= 90:
-                    result.Letter = 'D';
-                    break;
-                default:
-                    result.Letter = 'F';
-                    break;
+                result.Add(num);
             }
             return result;
         }

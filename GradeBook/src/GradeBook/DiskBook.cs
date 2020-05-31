@@ -8,16 +8,22 @@ namespace GradeBook
     {
         public DiskBook(string name) : base(name)
         {
+            if (!File.Exists($"{Name}.txt"))
+            {
+                using(var f = File.Create($"{Name}.txt"))
+                {
+                }
+            }
         }
 
         public override event GradeAddedDelegate GradeAdded;
 
         public override void AddGrade(double grade)
         {
-            using( var writter = File.AppendText($"{Name},txt") )
+            using (var writter = File.AppendText($"{Name}.txt"))
             {
                 writter.WriteLine(grade);
-                if(GradeAdded != null)
+                if (GradeAdded != null)
                 {
                     GradeAdded(this, new EventArgs());
                 }
@@ -26,7 +32,18 @@ namespace GradeBook
 
         public override Statistics GetStatistics()
         {
-            throw new NotImplementedException();
+            var result = new Statistics();
+            using (var reader = File.OpenText($"{Name}.txt"))
+            {
+                var line = reader.ReadLine();
+                while (line != null)
+                {
+                    var number = double.Parse(line);
+                    result.Add(number);
+                    line = reader.ReadLine();
+                }
+            }
+            return result;
         }
     }
 }
